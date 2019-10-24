@@ -168,6 +168,31 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.outer-container {
+  border-bottom: 1.5px dashed darkgrey;
+}
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2% 0;
+}
+nav .brand h1 {
+  font-size: ;
+  font-family: ;
+}
+nav .nav-items {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+nav .nav-items .nav-item {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
