@@ -178,10 +178,6 @@ nav {
   justify-content: space-between;
   padding: 2% 0;
 }
-nav .brand h1 {
-  font-size: ;
-  font-family: ;
-}
 nav .nav-items {
   width: 40%;
   display: flex;
