@@ -8,3 +8,12 @@
         transition: 0.3s ease;
     }
 } 
+
+// Buttons
+.btn(@bg-color, @text-color) {
+    background: @bg-color;
+    color: @text-color;
+    border-radius: 5%;
+    width: 100%;
+    .scaleup-color(1.1, @bg-color);
+}
