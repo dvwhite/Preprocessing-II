@@ -26,3 +26,23 @@
         opacity: 75%;
     }
 }
+
+// Interpolations
+.dashed-border(@side) {
+    // Top
+    & when (@side = top) {
+        border-top: @border-attr;
+    }
+    // Bottom
+    & when (@side = bottom) {
+        border-bottom: @border-attr;
+    }
+    // Right
+    & when (@side = right) {
+        border-right: @border-attr;
+    }
+    // Left
+    & when (@side = left) {
+        border-left: @border-attr;
+    }
+}
