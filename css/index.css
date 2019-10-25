@@ -1,6 +1,7 @@
 .btn {
   background: #17A2B8;
   color: #FFFFFF;
+  border: 1px solid #17A2B8;
   font-size: 1.6rem;
   text-align: center;
   text-decoration: none;
@@ -8,6 +9,9 @@
   border-radius: 1.5rem;
   padding: 5%;
   width: 100%;
+}
+.btn:hover {
+  opacity: 75%;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
