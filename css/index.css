@@ -3,6 +3,8 @@
   color: #FFFFFF;
   font-size: 1.6rem;
   text-align: center;
+  text-decoration: none;
+  display: inline-block;
   border-radius: 1.5rem;
   padding: 5%;
   width: 100%;
@@ -257,6 +259,6 @@ nav .nav-items .nav-item:hover {
   justify-content: space-between;
 }
 .home .content-pick .destination {
-  width: 30%;
+  width: 25%;
   margin-bottom: 30px;
 }
