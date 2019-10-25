@@ -5,15 +5,26 @@
 
 nav {
     width: 100%;
-    display: flex;
+    .flex();
     align-items: center;
     justify-content: space-between;
     padding: 2% 1% 2% 0;
 
+    h1 {
+        @media @mobile {
+            width: 100%;
+            padding: 3% 0 10% 0;
+        }
+    }
+
     .nav-items {
         width: 40%;
-        display: flex;
         justify-content: space-around;
+
+        @media @mobile {
+            width: 100%;
+            display: flex;
+        }
 
         .nav-item {
             text-decoration: none;

@@ -27,7 +27,6 @@
     }
 }
 
-// Interpolations
 .dashed-border(@side) {
     // Top
     & when (@side = top) {
@@ -44,5 +43,13 @@
     // Left
     & when (@side = left) {
         border-left: @border-attr;
+    }
+}
+
+.flex {
+    display: flex;
+
+    @media @mobile {
+        flex-direction: column;
     }
 }

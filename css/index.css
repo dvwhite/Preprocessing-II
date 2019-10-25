@@ -13,6 +13,14 @@
 .btn:hover {
   opacity: 75%;
 }
+.flex {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .flex {
+    flex-direction: column;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -183,6 +191,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 433px;
+  }
+}
 .outer-container {
   border-bottom: 1.5px dashed #C0C0C0;
 }
@@ -193,10 +206,26 @@ nav {
   justify-content: space-between;
   padding: 2% 1% 2% 0;
 }
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  nav h1 {
+    width: 100%;
+    padding: 3% 0 10% 0;
+  }
+}
 nav .nav-items {
   width: 40%;
-  display: flex;
   justify-content: space-around;
+}
+@media (max-width: 500px) {
+  nav .nav-items {
+    width: 100%;
+    display: flex;
+  }
 }
 nav .nav-items .nav-item {
   text-decoration: none;
