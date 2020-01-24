@@ -1,1 +1,37 @@
 // Navigation Styles here
+.outer-container {
+    border-bottom: 1.5px dashed @navigation-border;
+}
+
+nav {
+    width: 100%;
+    .flex();
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 1% 2% 0;
+
+    h1 {
+        @media @mobile {
+            width: 100%;
+            padding: 3% 0 10% 0;
+        }
+    }
+
+    .nav-items {
+        width: 40%;
+        justify-content: space-around;
+
+        @media @mobile {
+            width: 100%;
+            display: flex;
+        }
+
+        .nav-item {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 1.5rem;
+            .scaleup-color(1.1, orange);
+        }
+    }
+}

@@ -1,1 +1,59 @@
 // Mixins in here
+
+// Animations
+.scaleup-color(@scale-factor, @color) {
+    &:hover {
+        transform: scale(@scale-factor);
+        color: @color;
+        transition: 0.3s ease;
+    }
+} 
+
+// Buttons
+.btn {
+    background: @button-bg;
+    color: @main-bg;
+    border: 1px solid @button-bg;
+    font-size: 1.6rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 1.5rem;
+    padding: 5%;
+    width: 100%;
+
+    &:hover {
+        opacity: 75%;
+    }
+
+    @media @mobile {
+        padding: 2.5%;
+    }
+}
+
+.dashed-border(@side) {
+    // Top
+    & when (@side = top) {
+        border-top: @border-attr;
+    }
+    // Bottom
+    & when (@side = bottom) {
+        border-bottom: @border-attr;
+    }
+    // Right
+    & when (@side = right) {
+        border-right: @border-attr;
+    }
+    // Left
+    & when (@side = left) {
+        border-left: @border-attr;
+    }
+}
+
+.flex {
+    display: flex;
+
+    @media @mobile {
+        flex-direction: column;
+    }
+}
